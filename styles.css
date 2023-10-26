@@ -1,0 +1,164 @@
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 56px;
+    color: #333;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 40px;
+    color:#333;
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #7969BA;
+    margin: 0px;
+}
+
+h4 {
+    font-size: 32px;
+    color: #333;
+}
+
+/*Intro*/
+
+#intro {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.introContainer {
+    margin-top: 48px;
+    margin-bottom: 112px;
+    width: fit-content;
+}
+
+.pronouns {
+    padding-left: 8px;
+}
+
+.introHello {
+    padding-right: 8px;
+    color: #7969BA;
+}
+
+.introIam {
+    width: fit-content;
+    margin-top: 8px;
+}
+
+.helloJake {
+    width: fit-content;
+    margin-bottom: 0px;
+    align-items: baseline;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1;
+}
+
+/*Header & Nav*/
+
+header {
+    margin: 48px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfc;
+    color:#7969BA;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.circle-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    transition: ease-in-out 0.3s;
+    padding-right: 16px;
+}
+
+.logoText {
+    color: #333;
+    font-size: 32px;
+}
+
+nav a {
+    padding: 16px;
+    min-width: 128px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color:#7969BA;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #EE33A2;
+}
+
+.circle-logo:hover {
+    width: 80px;
+    height: 80px;
+}
+
+/*UX Skills*/
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-card {
+    width: 24%;
+    min-width: 240px;
+    padding: 24px;
+    margin: 24px;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.skill-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-description {
+    margin-top: 24px;
+    text-align: center;
+}
+
+/*Responsive Design*/
+
+@media screen and (max-width: 480px) {
+    nav a {
+        font-size: 16px;
+    }
+}
