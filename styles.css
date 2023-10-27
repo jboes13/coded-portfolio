@@ -13,6 +13,7 @@ p {
 h1 {
     font-family: "Outfit", sans-serif;
     font-size: 56px;
+    font-weight: 400;
     color: #333;
     margin: 0px;
 }
@@ -20,6 +21,7 @@ h1 {
 h2 {
     font-family: "Outfit", sans-serif;
     font-size: 40px;
+    font-weight: 400;
     color:#333;
     margin: 0px;
 }
@@ -116,8 +118,47 @@ nav a:hover {
 }
 
 .circle-logo:hover {
-    width: 80px;
-    height: 80px;
+    width: 96px;
+    height: 96px;
+}
+
+/*Projects*/
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.projectCard {
+    display: flex;
+    width: fit-content;
+    max-width: 816px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 24px;
+    transition: ease 0.3s;
+}
+
+.projectImage {
+    display: flex;
+    width: fit-content;
+    max-width: 720px;
+    border-radius: 24px;
+    transition: ease 0.3s;
+}
+
+.projectTitle {
+    padding: 8px;
+}
+
+.projectCard:hover {
+    .projectImage {
+        max-width: 816px;
+    }
 }
 
 /*UX Skills*/
@@ -130,21 +171,23 @@ nav a:hover {
 }
 
 .skill-card {
-    width: 24%;
+    width: 22%;
     min-width: 240px;
-    padding: 24px;
+    padding: 48px 24px 24px 24px;
     margin: 24px;
     border-radius: 24px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     transition: ease 0.3s;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
 
 .skill-card:hover {
     padding: 24px 72px;
-    box-shadow: 0px 24px 16px 8px rgba(0,0,0,0.1);
+    box-shadow: 2px 8px 16px 8px rgba(0,0,0,0.08);
     translate: 0px -24px;
     .skill-icon {
         scale: 1.06;
