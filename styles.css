@@ -212,10 +212,4 @@ nav a:hover {
     text-align: center;
 }
 
-/*Responsive Design*/
-
-@media screen and (max-width: 480px) {
-    nav a {
-        font-size: 16px;
-    }
-}
+/*Media Breaks*/
