@@ -32,11 +32,15 @@ h3 {
     font-weight: 400;
     color: #7969BA;
     margin: 0px;
+    transition: ease-in-out 0.3s;
 }
 
 h4 {
+    font-family: "Outfit", sans-serif;
     font-size: 32px;
     color: #333;
+    margin: 0px;
+    transition: ease-in-out 0.3s;
 }
 
 /*Intro*/
@@ -128,37 +132,79 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin-bottom: 48px;
 }
 
 .projectCard {
     display: flex;
-    width: fit-content;
-    max-width: 816px;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 16px 24px 16px 24px;
-    transition: ease 0.3s;
+    margin: 48px 8px;
+    transition: ease-in-out 0.3s;
+}
+
+.projectLinebreak {
+    background-color: #333;
+    height: 3px;
+    width: 160px;
+    border-radius: 3px;
 }
 
 .projectImage {
     display: flex;
     width: fit-content;
-    max-width: 720px;
-    border-radius: 24px;
-    transition: ease 0.3s;
+    max-width: 640px;
+    transition: ease-in-out 0.3s;
 }
 
 .projectTitle {
-    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    /*margin: 0px 48px 0px 48px;*/
+    max-width: 320px;
+    height: 360px;
+    p {
+        font-size: 24px;
+        margin: 0px 8px;
+
+    }
+}
+
+.projectView {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    transition: ease-in-out 0.5s;
+    opacity: 0.0;
 }
 
 .projectCard:hover {
     .projectImage {
-        max-width: 816px;
+        max-width: 800px;
     }
+    h4 {
+        color:#EE33A2
+    }
+    .projectView {
+        opacity: 1.0;
+        p {
+            color: #EE33A2;
+        }
+    }
+
+}
+
+.sml-icon {
+    height: 16px;
+    width: 16px;
 }
 
 /*UX Skills*/
@@ -181,7 +227,7 @@ nav a:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    transition: ease 0.3s;
+    transition: ease-in-out 0.3s;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -204,7 +250,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: ease 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
 .skill-description {
@@ -213,3 +259,28 @@ nav a:hover {
 }
 
 /*Media Breaks*/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    
+ } 
