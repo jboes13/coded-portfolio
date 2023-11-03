@@ -207,6 +207,53 @@ nav a:hover {
     width: 16px;
 }
 
+/*About*/
+
+#About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+    p {
+        font-size: 24px;
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: fit-content;
+}
+
+.aboutPhoto {
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 50%;
+    margin-right: 72px;
+    transition: ease-in-out 0.4s;
+}
+
+.aboutPhoto:hover {
+    max-width: 328px;
+    max-height: 328px;
+}
+
+.aboutIntro {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    width: fit-content;
+}
+
 /*UX Skills*/
 
 .skills-container {
@@ -272,7 +319,6 @@ nav a:hover {
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
-
  }
  
  /* Large devices (laptops/desktops, 992px and up) */
