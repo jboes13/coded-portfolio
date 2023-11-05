@@ -2,11 +2,12 @@ body {
     font-family: "Outfit", sans-serif;
     background-color: #fbfbfb;
     color: #333;
+    margin: 0px;
 }
 
 p {
     font-family: "Outfit", sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     color: #333;
 }
 
@@ -304,6 +305,54 @@ nav a:hover {
     margin-top: 24px;
     text-align: center;
 }
+
+/* Case Study */
+
+#caseTitle {
+    width: 100%;
+    margin: 112px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContainer {
+    width: fit-content;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleText {
+    color:#7969BA;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+}
+
+.titleText:hover {
+    color:#EE33A2;
+    text-align: center;
+    font-size: 64px;
+}
+
+#caseStudy {
+    width: 100%;
+}
+
+.caseContainer {
+    width: fit-content;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caseSlide {
+    display: flex;
+}
+
 
 /*Media Breaks*/
 
