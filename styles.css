@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: "Outfit", sans-serif;
     background-color: #fbfbfb;
@@ -109,7 +113,7 @@ header {
     background-color: #fcfcfc;
     color:#7969BA;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .circle-logo {
@@ -123,6 +127,10 @@ header {
 .logoText {
     color: #333;
     font-size: 32px;
+}
+
+nav {
+    margin: 16px;
 }
 
 nav a {
@@ -267,9 +275,8 @@ nav a:hover {
 
 .aboutLinebreak {
     background-color:#EE33A2;
-    height: 3px;
-    width: 160px;
-    border-radius: 3px;
+    height: 2px;
+    width: 50%;
     margin: 16px 0px;
 }
 
@@ -395,19 +402,21 @@ nav a:hover {
 
 #caseStudy {
     width: 100%;
-}
-
-.caseContainer {
-    width: fit-content;
-    border-radius: 25%;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.caseContainer {
+    max-width: 1200px;
+    border-radius: 56px;
 }
 
 .caseSlide {
     display: flex;
+    width: 100%;
+
 }
 
 
@@ -415,12 +424,16 @@ nav a:hover {
 
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
-
+    nav a {
+        justify-content: center;
+    }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {
-
+    nav a {
+        justify-content: center;
+    }
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
