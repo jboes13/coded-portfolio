@@ -399,7 +399,8 @@ nav a:hover {
 
 .caseContainer {
     width: fit-content;
-    max-width: 1920px;
+    border-radius: 25%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
