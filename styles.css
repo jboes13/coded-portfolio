@@ -187,7 +187,7 @@ nav a:hover {
 
 .projectImage {
     display: flex;
-    width: fit-content;
+    width: 100%;
     max-width: 640px;
     transition: ease-in-out 0.3s;
 }
