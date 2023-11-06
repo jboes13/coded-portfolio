@@ -9,6 +9,7 @@ p {
     font-family: "Outfit", sans-serif;
     font-size: 24px;
     color: #333;
+    margin: 16px 0px;
 }
 
 h1 {
@@ -43,6 +44,23 @@ h4 {
     margin: 0px;
     transition: ease-in-out 0.3s;
 }
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #EE33A2;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
 
 /*Intro*/
 
@@ -130,7 +148,9 @@ nav a:hover {
 /*Projects*/
 
 .projectContainer {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
@@ -154,6 +174,7 @@ nav a:hover {
     height: 3px;
     width: 160px;
     border-radius: 3px;
+    margin-bottom: 16px;
 }
 
 .projectImage {
@@ -206,6 +227,8 @@ nav a:hover {
 .sml-icon {
     height: 16px;
     width: 16px;
+    margin: 0px 8px;
+    transition: ease-in-out 0.3s;
 }
 
 /*About*/
@@ -222,9 +245,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     padding-right: 8px;
-    p {
-        font-size: 24px;
-    }
 }
 
 .about-container {
@@ -234,6 +254,7 @@ nav a:hover {
     align-items: flex-start;
     max-width: 1200px;
     width: fit-content;
+    margin: 16px;
 }
 
 .aboutPhoto {
@@ -244,6 +265,14 @@ nav a:hover {
     transition: ease-in-out 0.4s;
 }
 
+.aboutLinebreak {
+    background-color:#EE33A2;
+    height: 3px;
+    width: 160px;
+    border-radius: 3px;
+    margin: 16px 0px;
+}
+
 .aboutPhoto:hover {
     max-width: 328px;
     max-height: 328px;
@@ -251,8 +280,35 @@ nav a:hover {
 
 .aboutIntro {
     margin-top: 0px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     width: fit-content;
+}
+
+.aboutLinkscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 20px;
+        margin: 8px 0px;
+    }
+
+}
+
+.aboutLink:hover {
+    p{
+        color: #EE33A2;
+    }
+    .sml-icon {
+        rotate: -45deg;
+    }
 }
 
 /*UX Skills*/
