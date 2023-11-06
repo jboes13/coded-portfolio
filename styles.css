@@ -315,6 +315,7 @@ nav a:hover {
     }
     .sml-icon {
         rotate: -45deg;
+        scale: 1.3;
     }
 }
 
