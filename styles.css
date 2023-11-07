@@ -419,8 +419,13 @@ nav a:hover {
 }
 
 .caseContainer {
-    max-width: 1200px;
+    width: 100%;
     border-radius: 56px;
+}
+
+.caseCover {
+    display: flex;
+    width: 100%;
 }
 
 .caseSlide {
@@ -429,6 +434,40 @@ nav a:hover {
 
 }
 
+
+
+/*Weird Arrow Animation thing i hoepe it work*/
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    rotate: 90deg;
+    position: fixed;
+    bottom: 24px;
+}
+
+.caseArrow {
+    animation: pulse 2s infinite;
+    width: 72px;
+    height: 72px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: translateX(-50%) scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateX(-50%) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+      opacity: 0.5;
+    }
+  }
 
 /*Media Breaks*/
 
@@ -449,6 +488,13 @@ nav a:hover {
     .aboutPhoto {
         margin-right: 0px;
     }
+    .caseArrow {
+        width: 48px;
+        height: 48px;
+    }
+    h1{
+        font-size: 40px;
+    }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -467,6 +513,13 @@ nav a:hover {
     .aboutPhoto {
         margin-right: 0px;
     }
+    .caseArrow {
+        width: 48px;
+        height: 48px;
+    }
+    h1{
+        font-size: 40px;
+    }
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
@@ -480,6 +533,13 @@ nav a:hover {
     .aboutPhoto {
         margin-right: 0px;
     }
+    .caseArrow {
+        width: 56px;
+        height: 56px;
+    }
+    h1{
+        font-size: 40px;
+    }
  }
  
  /* Large devices (laptops/desktops, 992px and up) */
@@ -490,6 +550,16 @@ nav a:hover {
     .about-container {
         flex-direction: row;
     }
+    .aboutPhoto {
+        margin-right: 56px;
+    }
+    .caseArrow {
+        width: 72px;
+        height: 72px;
+    }
+    h1{
+        font-size: 56px;
+    }
  }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -499,5 +569,15 @@ nav a:hover {
     }
     .about-container {
         flex-direction: row;
+    }
+    .aboutPhoto {
+        margin-right: 56px;
+    }
+    .caseArrow {
+        width: 72px;
+        height: 72px;
+    }
+    h1{
+        font-size: 56px;
     }
  } 
