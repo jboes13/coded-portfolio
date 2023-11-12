@@ -528,6 +528,12 @@ nav a:hover {
 .testingImage {
     display: flex;
     max-width: 40%;
+    transition:  ease-in-out 0.3s;
+}
+
+.testingImage:hover {
+    display: flex;
+    max-width: 42%;
 }
 
 /*Weird Arrow Animation thing i hoepe it work*/
