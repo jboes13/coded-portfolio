@@ -12,6 +12,7 @@ body {
 p {
     font-family: "Outfit", sans-serif;
     font-size: 24px;
+    font-weight: 300;
     color: #333;
     margin: 16px 0px;
 }
@@ -46,6 +47,7 @@ h4 {
     font-size: 32px;
     color: #333;
     margin: 0px;
+    margin-bottom: 16px;
     transition: ease-in-out 0.3s;
 }
 
@@ -410,7 +412,6 @@ nav a:hover {
 }
 
 #caseStudy {
-    padding: 24px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -419,8 +420,26 @@ nav a:hover {
 }
 
 .caseContainer {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 56px 0px;
+}
+
+.caseCard {
     width: 100%;
-    border-radius: 56px;
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 24px;
+        h4 {
+            margin-bottom: 24px;
+        }
 }
 
 .caseCover {
@@ -431,10 +450,85 @@ nav a:hover {
 .caseSlide {
     display: flex;
     width: 100%;
-
 }
 
+.caseLinebreak {
+    background-color: #7969BA;
+    height: 3px;
+    width: 160px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
 
+.projectCasecard {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 48px 8px;
+    transition: ease-in-out 0.3s;
+}
+
+.projectCaseinfo {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    /*margin: 0px 48px 0px 48px;*/
+    width: 100%;
+    max-width: 1440px;
+    p {
+        font-size: 24px;
+        margin: 8px 0px;
+
+    }
+}
+
+.projectCasecolumn {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 1440px;
+    padding: 16px;
+    /*margin: 0px 48px 0px 48px;*/
+    p {
+        font-size: 24px;
+        margin: 8px 0px;
+
+    }
+}
+
+.avatars {
+    display: flex;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 50%;
+    margin-right: 72px;
+    margin-bottom: 48px;
+    transition: ease-in-out 0.4s;
+}
+
+.avatars:hover {
+    max-width: 328px;
+    max-height: 328px;
+}
+
+.emojis {
+    max-width: 200px;
+    transition: ease-in-out 0.2s;
+}
+
+.emojis:hover {
+    max-width: 224px;
+}
+
+.testingImage {
+    display: flex;
+    max-width: 40%;
+}
 
 /*Weird Arrow Animation thing i hoepe it work*/
 
