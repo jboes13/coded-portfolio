@@ -59,6 +59,11 @@ h5 {
     transition: ease-in-out 0.3s;
 }
 
+a {
+    color:#fcfcfc;
+    margin-bottom: 16px;
+}
+
 a:link {
     text-decoration: none;
   }
@@ -568,6 +573,55 @@ nav a:hover {
       opacity: 0.5;
     }
   }
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(85,71,141);
+    background: linear-gradient(180deg, rgba(85,71,141,1) 0%, rgba(238,51,162,1) 100%);
+    p {
+        color: #fcfcfc;
+        text-decoration: underline;
+        margin: 0px;
+    }
+    h4 {
+        color: #fcfcfc;
+    }
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerCard {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.contactLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialIcon {
+    max-width: 56px;
+    margin: 16px
+}
 
 /*Media Breaks*/
 
