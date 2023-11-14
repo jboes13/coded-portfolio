@@ -620,7 +620,15 @@ footer {
 
 .socialIcon {
     max-width: 56px;
-    margin: 16px
+    margin: 16px;
+    transition: ease-in-out 0.2s;
+    border-radius: 50%;
+}
+
+.socialIcon:hover {
+    max-width: 64px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+
 }
 
 /*Media Breaks*/
