@@ -473,7 +473,7 @@ nav a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 48px 8px;
+    margin: 32px 8px;
     transition: ease-in-out 0.3s;
 }
 
