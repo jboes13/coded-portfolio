@@ -15,6 +15,8 @@ p {
     font-weight: 300;
     color: #333;
     margin: 16px 0px;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -80,6 +82,11 @@ a:link {
   a:active {
     text-decoration: none;
   }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /*Intro*/
 
@@ -428,7 +435,7 @@ nav a:hover {
     max-width: 1440px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 56px 0px;
@@ -482,7 +489,6 @@ nav a:hover {
     flex-direction: column;
 
     padding: 16px;
-    /*margin: 0px 48px 0px 48px;*/
     width: 100%;
     max-width: 1440px;
     p {
@@ -504,6 +510,13 @@ nav a:hover {
         margin: 8px 0px;
 
     }
+}
+
+.prototypeScreen {
+    max-width: 100%;
+    height: auto;
+    max-height: 640px;
+    margin: 8px 0px;
 }
 
 .avatars {
@@ -541,7 +554,7 @@ nav a:hover {
     max-width: 42%;
 }
 
-/*Weird Arrow Animation thing i hoepe it work*/
+/*Weird Arrow Animation thing i hoepe it work
 
 .arrow {
     display: flex;
@@ -573,6 +586,8 @@ nav a:hover {
       opacity: 0.5;
     }
   }
+
+it didn't :( */
 
 /*Footer*/
 
