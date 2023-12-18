@@ -108,6 +108,11 @@ a:link {
 img {
     max-width: 100%;
     height: auto;
+    margin: 8px;
+}
+
+.halfSize {
+    width: 50%;
 }
 
 /*Intro*/
@@ -501,7 +506,7 @@ nav a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 32px 8px;
     transition: ease-in-out 0.3s;
 }
@@ -678,6 +683,10 @@ footer {
         flex-direction: column;
     }
 
+    .footerContainer {
+        flex-wrap: wrap;
+    }
+
     .projectCardreverse {
         flex-direction: column-reverse;
     }
@@ -693,6 +702,10 @@ footer {
     }
     h1{
         font-size: 40px;
+    }
+
+    .projectCasecard {
+        flex-wrap: wrap;
     }
  }
 
@@ -703,6 +716,11 @@ footer {
         align-items: center;
         flex-direction: column;
     }
+
+    .footerContainer {
+        flex-wrap: wrap;
+    }
+
     .projectCardreverse {
         flex-direction: column-reverse;
     }
@@ -719,10 +737,19 @@ footer {
     h1{
         font-size: 40px;
     }
+
+    .projectCasecard {
+        flex-wrap: wrap;
+    }
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
+
+    .footerContainer {
+        flex-wrap: nowrap;
+    }
+
     .projectCardreverse {
         flex-direction: column-reverse;
     }
@@ -739,10 +766,18 @@ footer {
     h1{
         font-size: 40px;
     }
+    .projectCasecard {
+        flex-wrap: nowrap;
+    }
  }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
+
+    .footerContainer {
+        flex-wrap: nowrap;
+    }
+
     .projectCardreverse {
         flex-direction: row;
     }
@@ -758,11 +793,19 @@ footer {
     }
     h1{
         font-size: 56px;
+    }
+    .projectCasecard {
+        flex-wrap: nowrap;
     }
  }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
+
+    .footerContainer {
+        flex-wrap: nowrap;
+    }
+
     .projectCardreverse {
         flex-direction: row;
     }
@@ -778,5 +821,8 @@ footer {
     }
     h1{
         font-size: 56px;
+    }
+    .projectCasecard {
+        flex-wrap: nowrap;
     }
  } 
