@@ -585,6 +585,19 @@ nav a:hover {
     max-width: 42%;
 }
 
+.soundcloud {
+    width: 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 24px;
+        h4 {
+            margin-bottom: 24px;
+        }
+}
+
 /*Weird Arrow Animation thing i hoepe it work
 
 .arrow {
